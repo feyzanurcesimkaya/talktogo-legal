@@ -1,19 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>TalkToGo – Legal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TalkToGo — Voice Navigation & Place Recommendations</title>
+  <meta name="description" content="TalkToGo is a voice-first navigation and place recommendation assistant." />
+  <style>
+    :root{color-scheme:dark;--bg:#0b1220;--card:#111b33;--txt:#e7eaf0;--mut:#a7b0c0;--acc:#fb923c;}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:radial-gradient(circle at top,#182544 0,#0b1220 55%);color:var(--txt)}
+    .wrap{max-width:920px;margin:0 auto;padding:40px 16px}
+    .card{background:rgba(17,27,51,.9);border:1px solid rgba(167,176,192,.18);border-radius:18px;padding:22px;box-shadow:0 18px 60px rgba(0,0,0,.35)}
+    h1{margin:0 0 8px;font-size:32px;letter-spacing:.2px}
+    p{margin:8px 0;color:var(--mut);line-height:1.5}
+    .pill{display:inline-flex;gap:10px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(251,146,60,.16);border:1px solid rgba(251,146,60,.35);color:#ffd7b3;font-weight:700;font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
+    .feat{padding:14px;border-radius:14px;background:rgba(0,0,0,.18);border:1px solid rgba(167,176,192,.14)}
+    .feat b{color:var(--txt)}
+    footer{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;color:var(--mut);font-size:14px}
+    a{color:var(--acc);text-decoration:none} a:hover{text-decoration:underline}
+    .small{font-size:13px;color:var(--mut)}
+  </style>
 </head>
 <body>
-  <h1>TalkToGo Legal Pages</h1>
+  <div class="wrap">
+    <div class="card">
+      <div class="pill">✅ TalkToGo — App Review Website</div>
+      <h1>TalkToGo</h1>
+      <p>TalkToGo is a voice-first navigation and place recommendation assistant. Users can speak or type a request, get nearby place suggestions, and open routes in Google Maps.</p>
 
-  <ul>
-    <li>
-      <a href="./privacy.html">Privacy Policy</a>
-    </li>
-    <li>
-      <a href="./terms.html">Terms of Service</a>
-    </li>
-  </ul>
+      <div class="grid">
+        <div class="feat"><b>Core Features</b><p class="small">Voice/text input, place recommendations, route links, favorites, saved locations.</p></div>
+        <div class="feat"><b>Location</b><p class="small">Used only with permission to recommend places nearby and generate directions.</p></div>
+        <div class="feat"><b>TikTok</b><p class="small">TikTok login may run in review/demo mode until Login Kit is approved.</p></div>
+      </div>
+
+      <p class="small" style="margin-top:14px;">
+        Contact: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+      </p>
+
+      <footer>
+        <span>© <span id="y"></span> TalkToGo</span>
+        <span>
+          <a href="./privacy.html">Privacy Policy</a> ·
+          <a href="./terms.html">Terms of Service</a>
+        </span>
+      </footer>
+    </div>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
